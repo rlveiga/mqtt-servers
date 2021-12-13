@@ -1,0 +1,15 @@
+[package]
+name = "client"
+version = "0.1.0"
+edition = "2018"
+serde = "1.0.130"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+paho-mqtt = { git = "https://github.com/eclipse/paho.mqtt.rust.git", branch = "master" }
+serde_json = "1.0"
+
+[[bin]]
+name = "pub"
+path = "src/main.rs"

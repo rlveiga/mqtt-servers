@@ -1,0 +1,17 @@
+[package]
+name = "my-project"
+version = "0.1.0"
+authors = ["runner"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+regex = "1.5"
+paho-mqtt = { git = "https://github.com/eclipse/paho.mqtt.rust.git", branch = "master" }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1.0"
+
+[[bin]]
+name = "pub"
+path = "src/main.rs"
